@@ -15,7 +15,7 @@ def main():
     # A dictionary to store meaning of all words
     meaning = {}        
     for word in wordList:
-        # REMEMBER TO HIDE THE PRODUCT KEY
+        
         url = "http://www.dictionaryapi.com/api/v1/references/collegiate/xml/"+word+"?key=<your_key>";
         try:
             re = requests.get(url)

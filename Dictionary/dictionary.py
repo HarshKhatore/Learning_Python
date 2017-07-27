@@ -16,7 +16,7 @@ def main():
     meaning = {}        
     for word in wordList:
         # REMEMBER TO HIDE THE PRODUCT KEY
-        url = "http://www.dictionaryapi.com/api/v1/references/collegiate/xml/"+word+"?key=72defb3a-8a26-4f1b-af69-1826266dc20a";
+        url = "http://www.dictionaryapi.com/api/v1/references/collegiate/xml/"+word+"?key=<your_key>";
         try:
             re = requests.get(url)
             root = etree.fromstring(re.content)
